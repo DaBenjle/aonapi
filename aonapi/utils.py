@@ -1,5 +1,12 @@
 import threading
-import time
+from sqlmodel import Session
+from aonapi.models import engine
+
+
+def get_db():
+    """Dependency to get a new database session."""
+    with Session(engine) as session:
+        yield session
 
 
 class SingletonMeta(type):

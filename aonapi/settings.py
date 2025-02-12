@@ -10,8 +10,8 @@ debug = False
 aon_protocol = "https"
 aon_base_url = "aonprd.com"
 elastic_search_prefix = "elasticsearch"
-search_url = f"{aon_protocol}://{elastic_search_prefix}.{aon_base_url}"
-index_path = f"{search_url}/json-data/aon52-index.json"
+search_url = f"{aon_protocol}://{elastic_search_prefix}.{aon_base_url}/json-data"
+index_path = f"{search_url}/aon52-index.json"
 
 
 LOGGING_CONFIG = {

@@ -34,11 +34,6 @@ async def read_root(request: Request):
     )
 
 
-@app.get("/items/{item_id}")
-async def read_item(item_id: int, q: str = None):
-    return {"item_id": item_id, "q": q}
-
-
 # This is the event that will run when the app starts up.
 async def startup_event():
     print("Starting up...")
