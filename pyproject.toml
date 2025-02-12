@@ -1,0 +1,25 @@
+[project]
+name = "aonapi"
+version = "0.1.0"
+description = "Web scraper for Archives of Nethys (pf2e) that provides an api."
+authors = [
+    {name = "Ben Hilton",email = "26755370+DaBenjle@users.noreply.github.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard] (>=0.115.8,<0.116.0)",
+    "jinja2 (>=3.1.5,<4.0.0)",
+    "sqlmodel (>=0.0.22,<0.0.23)",
+    "environs (>=14.1.0,<15.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "aiohttp (>=3.11.12,<4.0.0)",
+    "apscheduler (>=3.11.0,<4.0.0)",
+    "cachetools (>=5.5.1,<6.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
