@@ -105,5 +105,5 @@ class Item(SQLModel, table=True):
     data: dict[str, Any] = Field(sa_column=Column(PickleType))
 
 
-engine = create_engine(database_url, echo=debug)
+engine = create_engine(database_url)
 SQLModel.metadata.create_all(engine)
