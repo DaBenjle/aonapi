@@ -25,6 +25,10 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 templates = Jinja2Templates(directory="aonapi/templates")
 
+from aonapi.routes.nethys_data import router as nethys_data_router
+
+app.include_router(nethys_data_router)
+
 
 # These are the routes for the app.
 @app.get("/")

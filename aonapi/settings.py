@@ -53,6 +53,11 @@ LOGGING_CONFIG = {
             "handlers": ["console"],
             "propagate": False,
         },
+        "aonapi.devdebug": {
+            "level": "DEBUG",
+            "handlers": ["console"],
+            "propagate": True,
+        },
     },
 }
 

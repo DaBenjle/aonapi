@@ -26,6 +26,7 @@ class AbilityBoost(str, Enum):
     wisdom = "wisdom"
     charisma = "charisma"
     free = "free"
+    two_free_ability_boosts = "two free ability boosts"
 
 
 class Vision(str, Enum):
